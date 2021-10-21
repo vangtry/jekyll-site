@@ -1,0 +1,17 @@
+# specify main menu items here
+
+- text: Inicio
+  url: /
+- text: Quiénes Somos
+  url: /about
+- text: Productos
+  sublinks:
+    - text: Corporativos
+      url: /corporativos
+    - text: Personalizados
+      url: /personalizados
+- text: Blog
+  url: /blog
+- text: Contacto
+  url: /contact
+  

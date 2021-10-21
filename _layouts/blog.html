@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<div class="fondo">
+    <div class="text-center padding-blog">
+        <h2 class="font-weight-bold mt-sm-5">Publicaciones Recientes</h2>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="row equal-height no-gutters">
+                {% for post in site.posts %} {% assign author = site.data.authors[post.author] %}
+                <div class="col-12 col-xs-6 col-md-6 col-lg-4 col-xl-4 p-3">
+                    <!-- Card -->
+                    <div class="card mb-2">
+                        <!-- Card content -->
+                        <div class="card-body">
+                            <!-- Title -->
+                            <h5 class="card-title mb-2 pt-0">{{ post.title }}</h5>
+                            <time datetime="{{ post.date }}">
+                                <small>
+                                    <strong>{{ post.date | date_to_string }}</strong>
+                                    {% if author %} by {{ author.name }}
+                                    {% endif %}
+                                </small>
+                            </time>
+                            <p>
+                                <small>
+                                    <strong>Por {{ post.author }}</strong>
+                                </small>
+                            </p>
+
+                            <!-- Text -->
+                            <p class="card-text">{{ post.excerpt | strip_newlines | truncate: 180 }}</p>
+                            <!-- Button -->
+
+                            <a href="{{ post.url }}" class="btn btn-primary1">Leer mas</a>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</div>

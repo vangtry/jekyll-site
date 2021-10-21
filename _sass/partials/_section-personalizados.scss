@@ -1,0 +1,65 @@
+.padding {
+  padding-top: 5% !important;
+}
+
+.tituloBorder {
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+
+.tituloBorder2 {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.margin-titulos {
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.fondo {
+  background-image: url("../../../assets/img/cupCakes/inicio/seccion1/back.png") !important;
+  background-size: cover;
+}
+
+.tamanoImg {
+  width: 50%;
+}
+
+@media only screen and (max-width: 991px) {
+  .tamanoImg {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .padding {
+    padding-top: 10% !important;
+  }
+  .margin-titulos {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .padding {
+    padding-top: 13% !important;
+  }
+  .margin-titulos {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+li .active {
+  background-color: #aa66cc !important;
+  color: white !important;
+  .font-color-tabs {
+    color: white;
+  }
+}
+
+.font-color-tabs {
+  color: black;
+}

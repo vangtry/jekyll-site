@@ -1,0 +1,108 @@
+.medida {
+  background-size: cover;
+}
+.view {
+  height: 100vh !important;
+}
+
+.mapImg {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.full-bg-img {
+  background: transparent !important;
+}
+
+.card-contac {
+  background-color: #6b2949 !important;
+  width: 400px !important;
+}
+
+.md-form .prefix {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.md-form label {
+  color: #ffffff;
+}
+h6 {
+  line-height: 1.7;
+}
+
+.full-bg-img {
+  background: transparent !important;
+}
+.alert {
+  background: transparent;
+  box-shadow: none;
+  color: #cc282b;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 3px;
+  margin-bottom: 1px;
+  display: inline-block;
+  animation: 2s alertAnim forwards;
+}
+
+@keyframes alertAnim {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.abajo {
+  margin-top: 7%;
+}
+.fondo {
+  background-image: url("../../../assets/img/cupCakes/inicio/seccion1/back.png") !important;
+  background-size: cover;
+}
+
+.tituloBorder2 {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+.margin-titulos {
+  margin-left: 37%;
+  margin-right: 37%;
+}
+.colorboton {
+  background-color: #4d1b32 !important;
+}
+@media only screen and (max-width: 992px) {
+  .card {
+    width: 300px !important;
+  }
+  .margin-titulos {
+    margin-left: 32%;
+    margin-right: 33%;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .margin {
+    margin-left: 10% !important;
+    padding-top: 1% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .mapImg {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+  }
+  .margin-titulos {
+    margin-left: 14%;
+    margin-right: 14%;
+  }
+}
+
+.color-font-contact{
+  color: white !important;
+}

@@ -1,0 +1,17 @@
+.bg-navbar {
+  background-color: #6b2949a9;
+}
+
+.icon-size-nav {
+  font-size: 30px;
+}
+
+.arrow-follow-us {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .arrow-follow-us {
+    display: none;
+  }
+}

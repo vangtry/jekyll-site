@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<section>
+    <div class="container" style="height: 100%; margin-top: 120px">
+        {% assign author = site.data.authors[page.author] %}
+        <div class="text-center">
+            <h2>{{ page.title }}</h2>
+
+            <div class="mb-4">
+                <time datetime="{{ page.date }}"> </time>
+                <small>
+                    <strong>Publicado el {{ page.date | date_to_string }}</strong>
+                    <h1>{% if author %} by {{ author.name }}</h1>
+                    {% endif %}
+                    <p style="font-size: 19px">
+                        <strong>Por {{ page.author }}</strong>
+                    </p>
+                </small>
+            </div>
+        </div>
+
+        <div style="min-height: 600px">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-md-2 col-md-8 post-container text-justify">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination pg-blue justify-content-center">
+                <li class="page-item">
+                    <a href="{{ page.previous.url }}" class="page-link" rel="prev">Anterior</a>
+                </li>
+                <li class="page-item">
+                    <a href="{{ page.previous.url }}" class="page-link" rel="prev">&laquo; {{ page.previous.title }}</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="{{ page.next.url }}" class="page-link" rel="next">{{ page.next.title }} &raquo;</a>
+                </li>
+                <li class="page-item">
+                    <a href="{{ page.next.url }}" class="page-link" rel="next">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>

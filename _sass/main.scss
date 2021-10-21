@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+// import scss files dont remove "normalize" !!
+@import "partials/app", "partials/fonts", "partials/normalize", "partials/navigation", "partials/section-us",
+  "partials/section-contact", "partials/section-personalizados", "partials/section-home", "partials/footer",
+  "partials/section-corporativos", "partials/blog";
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+body {
+  // Define default font family for site override Roboto of MDB for Monserrate from google fonts
+  // see _fonts.scss for import others fonts
+  font-family: $base-font-family !important;
+}
+
+.post-container {
+  img {
+    width: 100%;
+  }
+
+  b,
+  strong {
+    font-weight: bold !important;
+  }
+}
+
+.fuente {
+  font-family: "Quicksand", sans-serif;
+}
+
+.view {
+  height: 100% !important;
+}
+
+.followUsArrow {
+  animation-duration: 8s !important;
+}
+
+.parallax {
+  /* The image used */
+  // background-image: url('http://sirseni.com/demo/huma/images/slider/slider1.jpg');
+  /* Set a specific height */
+  // min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

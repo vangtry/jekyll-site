@@ -1,0 +1,191 @@
+<!--Intro Section-->
+<div>
+    <div class="fondo fuente pt-5">
+        <section class="container py-5">
+            <h2 class="h1 mt-5 font-weight-bold text-center py-1 tituloBorder2 margin-titulos">Contáctanos</h2>
+            <div class="d-flex justify-content-center mt-4">
+                <div class="flex-center">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <!--Form-->
+                            <div class="d-flex justify-content-center">
+                                <div class="flex-center">
+                                    <div class="card card-contac wow fadeInLeft " data-wow-delay="0.3s">
+
+                                        <div class="card-body">
+                                            <!--Header-->
+
+                                            <form id="contact-form" class="needs-validation" novalidate>
+                                                <div class="form-group">
+                                                    <div class="md-form">
+                                                        <i class="fa fa-user prefix white-text"></i>
+                                                        <input name="name" type="text" id="name"
+                                                            class="form-control white-text" required>
+                                                        <label for="name" class="color-font-contact">Tu nombre</label>
+                                                        <div class="invalid-feedback">
+                                                            Por favor ingrese su nombre
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="md-form">
+                                                        <i class="fa fa-envelope prefix white-text"></i>
+                                                        <input
+                                                            pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                                                            type="text" id="email" class="form-control white-text"
+                                                            name="email" required>
+                                                        <label for="email" class="color-font-contact">Tu correo</label>
+                                                        <div class="invalid-feedback">
+                                                            Por favor ingrese un email valido
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="md-form">
+                                                        <i class="fa fa-phone prefix white-text"></i>
+                                                        <input name="phone" pattern="[0-9]" type="number" id="phone"
+                                                            class="form-control white-text" maxlength="10" oninput="this.value=this.value.slice(0,this.maxLength)" required>
+                                                        <label for="phone" class="color-font-contact">Teléfono</label>
+                                                        <div class="invalid-feedback">
+                                                            Por favor ingrese un telefono valido
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="md-form">
+                                                        <i class="fas fa-edit prefix white-text"></i>
+                                                        <textarea type="text" id="message" name="message"
+                                                            class="md-textarea white-text" required></textarea>
+                                                        <label for="message" class="color-font-contact">Tu mensaje</label>
+                                                        <div class="invalid-feedback" class="color-font-contact">
+                                                            Esta campo es necesario.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-center">
+                                                    <button type="submit" name="submit" id="btnSendEmail"
+                                                        class="btn text-white waves-light colorboton">
+                                                        Enviar
+                                                    </button>
+                                                </div>
+
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--/.Form-->
+                        </div>
+                        <div class="col-md-6 col-lg-5 mt-5">
+                            <div class="d-flex justify-content-center">
+                                <div class="flex-center">
+                                    <a href="https://www.google.es/maps/place/Ac.+3+%2330a-31,+Bogot%C3%A1/@4.6035675,-74.1026022,18z/data=!4m5!3m4!1s0x8e3f993e39464bbb:0xcc23fc008ece1573!8m2!3d4.604022!4d-74.1016527"
+                                        target="_blank">
+                                        <div class="col-lg-12">
+
+                                            <img class="img-fluid mapImg  z-depth-4"
+                                                src="../../../assets/img/cupCakes/mapa.png" alt="Sample image">
+
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+
+    <div mdbModal #frame="mdbModal" class="modal fade" id="frameModalTop" tabindex="1" role="dialog"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-info" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Contactenos</p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <i class="fa fa-clock-o fa-4x animated fa-spin mb-4"></i>
+                    <p>Enviando...</p>
+                </div>
+
+
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <!-- Modal Mensaje Enviado-->
+    <div mdbModal #frame2="mdbModal" class="modal fade" id="frameModalTop" tabindex="1" role="dialog"
+        aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-info" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Contactenos</p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <i class="fa fa-paper-plane fa-4x animated rotateIn mb-4"></i>
+                    <p>Mensaje enviado correctamente</p>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a type="button" mdbBtn color="primary" outline="true" class="waves-light" mdbWavesEffect
+                        data-dismiss="modal" (click)="frame2.hide()">Ok</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <!-- Modal Mensaje NO ENVIADO-->
+    <div mdbModal #frame3="mdbModal" class="modal fade" id="frameModalTop" tabindex="1" role="dialog"
+        aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-info" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Contactenos</p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <i class="fa fa-exclamation-circle fa-4x animated rotateIn mb-4"></i>
+                    <p>No se pudo enviar su mensaje, intente mas tarde o envie un correo a</p>
+                    <h5 style="font-size: 13px">admin@vangtry.com</h5>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a type="button" mdbBtn color="colorboton" outline="true" class="waves-light colorboton"
+                        mdbWavesEffect data-dismiss="modal" (click)="frame3.hide()">Cerrar</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+</div>

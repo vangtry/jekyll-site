@@ -1,0 +1,36 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+<!-- Bootstrap tooltips -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
+
+<!-- EmailJS core JavaScript -->
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init('user_isW9VLQ6AYoMhswLlQ1kz');
+    })();
+</script>
+
+<!-- Jquery Lazy core JavaScript -->
+<script type="text/javascript" src="../assets/js/jquery-lazy/jquery.lazy.min.js"></script>
+<script>
+    $('.lazy').Lazy({
+        // your configuration goes here
+        effect: 'fadeIn',
+        effectTime: 1500,
+        threshold: 0,
+        onError: function (element) {
+            console.log('error loading ' + element.data('src'));
+        },
+    });
+</script>
+<script type="text/javascript" src="../assets/js/form-validation.js"></script>
+<script type="text/javascript" src="../assets/js/send-email.js"></script>

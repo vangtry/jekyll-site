@@ -1,0 +1,49 @@
+// Main Styles
+
+.my-class {
+    color: red;
+}
+
+.row.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.equal-height > [class*='col-'] {
+    display: flex;
+}
+
+.card {
+    flex: 1;
+}
+
+/**
+* Dont modify !!
+* Error styles for validation plugin
+*/
+.error {
+    color: #e74c3c !important;
+    margin-top: 31px !important;
+    font-size: 14px !important;
+}
+
+// Lazy loading styles, ** dont change name of class "lazy" !!**
+img.lazy {
+    width: 700px;
+    height: 467px;
+
+    /* set loading as background */
+    background-image: url('../../assets/img/loader.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.new-class {
+    width: 100px !important;
+    height: 106px !important;
+}
+
+div.lazy {
+    width: 700px;
+    height: 467px;
+}

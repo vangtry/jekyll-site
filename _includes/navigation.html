@@ -1,0 +1,64 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav menuLados bg-navbar">
+
+  <a class="navbar-brand" href="/">
+    <img src="../assets/img/cupCakes/logo/logo.png" alt="mdb logo" style="width: 160px">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <ul class="navbar-nav mr-auto">
+      {% for item in include.navigation %}
+      {% if item.sublinks %}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          {{item.text}}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          {% for sublink in item.sublinks %}
+          <a class="dropdown-item" href="{{sublink.url}}">{{sublink.text}}</a>
+          {% endfor %}
+        </div>
+      </li>
+      {% else %}
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link waves-effect waves-light" href="{{ item.url }}" {% if item.url == navurl %}
+          data-current="current page" {% endif %}>{{ item.text }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+
+    <div class="animated bounceInLeft wow imgSiguenos arrow-follow-us" data-wow-duration="4s">
+      <img src="../assets/img/cupCakes/icontop.png" alt="redes sociales"
+        class="animated  shake infinite  wow  mr-2 followUsArrow" data-wow-duration="10s" style="width: 100px">
+    </div>
+
+    <ul class="list-unstyled list-inline text-center mt-2">
+      <li class="list-inline-item mx-2">
+        <a href="https://www.facebook.com/cupcakesmadame/" target="_blank">
+          <i class="fab fa-facebook-f text-white icon-size-nav"></i>
+        </a>
+      </li>
+
+      <li class="list-inline-item mx-2">
+        <a href="https://www.instagram.com/madame_cupcakes/" target="_blank">
+          <i class="fab fa-instagram text-white icon-size-nav"></i>
+        </a>
+      </li>
+
+      <li class="list-inline-item mx-2">
+        <a href="https://api.whatsapp.com/send?phone=573133687816&text=Hola! Tengo una Consulta" target="_blank">
+          <i class="fab fa-whatsapp text-white icon-size-nav"></i>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+</nav>
